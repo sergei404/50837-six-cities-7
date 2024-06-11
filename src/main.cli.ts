@@ -1,13 +1,14 @@
 #!/usr/bin/env node
-// запустить npm link затем комманду shebang
-import { CLIApplication, HelpCommand, VersionCommand, ImportCommand } from './cli/index.js';
+
+import { CLIApplication, GenerateCommand, HelpCommand, VersionCommand, ImportCommand } from './cli/index.js';
 
 function bootstrap() {
   const cliApplication = new CLIApplication();
   cliApplication.registerCommands([
     new HelpCommand(),
     new VersionCommand(),
-    new ImportCommand()
+    new ImportCommand(),
+    new GenerateCommand()
   ]);
 
   cliApplication.processCommand(process.argv);

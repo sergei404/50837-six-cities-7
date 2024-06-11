@@ -1,16 +1,4 @@
-//import { CityName, Coordinates } from './city.type.js';
 import { User } from './user.type.js';
-
-//export type Coordinates = [ string , string ];
-// export type CityName =
-//   | 'Paris'
-//   | 'Cologne'
-//   | 'Brussels'
-//   | 'Amsterdam'
-//   | 'Hamburg'
-//   | 'Dusseldorf';
-
-//export type OfferType = 'apartment' | 'house' |'room' | 'hotel'
 
 export type Offer = {
   offerName: string
